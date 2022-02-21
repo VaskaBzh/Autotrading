@@ -2,20 +2,40 @@
     padding: 12.643rem 0 45.429rem
     background: url(../img/hero-bg.webp) no-repeat center / cover
     position: relative
+    z-index: -1
     &__title
         max-width: 46.714rem
         width: 100%
-        &__head
-            font-size: 5rem
-            line-height: 5.929rem
-            font-weight: 300
-            margin-bottom: 0.45rem
-        &__heading
-            font-family: 'Myriad Pro'
-            font-weight: 400
-            color: $dark
-            font-size: 2.5rem
-            line-height: 2.429rem
-        &__text
-            max-width: 24.857rem
-            
+    &__head
+       font-size: 5rem
+       line-height: 5.929rem
+       font-weight: 300
+       margin-bottom: 0.45rem
+    &__heading
+       font-family: 'Myriad Pro'
+       font-weight: 400
+       color: $dark
+       font-size: 2.5rem
+       line-height: 2.429rem
+    &__text
+       max-width: 25rem
+       font-weight: 300
+       font-size: 1.143rem
+       margin: 2.071rem 0 4.857rem
+       color: $gradientTo
+    &__block
+       max-width: 44.071rem
+       &__text
+           font-weight: 300
+           line-height: 2rem
+           color: $black
+           font-size: 1.714rem
+           &-word
+               color: $secondary
+    &__buttons
+        max-width: 17.071rem
+        width: 100%
+        margin-right: 3.786rem
+    &__button
+        &:nth-child(1)
+            margin-bottom: 0.857rem

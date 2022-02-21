@@ -359,6 +359,32 @@ template {
   display: none;
 }
 
+.button {
+  width: 100%;
+  padding: 1.286rem 0;
+  outline: none;
+  border: none;
+  font-size: 1.214rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.button-primary {
+  color: #fff;
+  background-color: #0842b7;
+}
+.button-outline {
+  color: #0842b7;
+  background: transparent;
+  border: 1px solid #0842b7;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
 .container {
   max-width: 1140px;
   width: 100%;
@@ -403,7 +429,7 @@ img {
 .header {
   padding: 2.143rem 0;
 }
-.header__menu__logo {
+.header__logo {
   position: relative;
   font-weight: 700;
   font-size: 1.714rem;
@@ -412,21 +438,21 @@ img {
   text-transform: uppercase;
   margin-left: 2.643rem;
 }
-.header__menu__logo::before {
+.header__logo::before {
   content: url(../img/logo.svg);
   position: absolute;
   top: 0;
   left: -2.643rem;
   width: 1.786rem;
 }
-.header__menu__nav {
+.header__nav {
   max-width: 36.286rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header__menu__nav__element {
+.header__nav__element {
   position: relative;
   font-weight: 700;
   font-style: normal;
@@ -435,10 +461,10 @@ img {
   color: #777;
   transition-duration: 0.4s;
 }
-.header__menu__nav__element:hover {
+.header__nav__element:hover {
   color: #000;
 }
-.header__menu__nav__element::before {
+.header__nav__element::before {
   content: "";
   position: absolute;
   top: 0;
@@ -448,17 +474,17 @@ img {
   z-index: 300;
   transition-duration: 0.1s;
 }
-.header__menu__nav__element:hover::before {
+.header__nav__element:hover::before {
   border-bottom: 4px solid #0056cf;
 }
-.header__menu__tel {
+.header__tel {
   font-size: 1.714rem;
   color: #777;
   line-height: normal;
   font-weight: 300;
   text-decoration: none;
 }
-.header__menu__tel-bold {
+.header__tel-bold {
   color: #0f1c2e;
   font-weight: 700;
   line-height: 2rem;
@@ -468,26 +494,87 @@ img {
   padding: 12.643rem 0 45.429rem;
   background: url(../img/hero-bg.webp) no-repeat center/cover;
   position: relative;
+  z-index: -1;
 }
 .hero__title {
   max-width: 46.714rem;
   width: 100%;
 }
-.hero__title__head {
+.hero__head {
   font-size: 5rem;
   line-height: 5.929rem;
   font-weight: 300;
   margin-bottom: 0.45rem;
 }
-.hero__title__heading {
+.hero__heading {
   font-family: "Myriad Pro";
   font-weight: 400;
   color: #000;
   font-size: 2.5rem;
   line-height: 2.429rem;
 }
-.hero__title__text {
-  max-width: 24.857rem;
+.hero__text {
+  max-width: 25rem;
+  font-weight: 300;
+  font-size: 1.143rem;
+  margin: 2.071rem 0 4.857rem;
+  color: #061826;
+}
+.hero__block {
+  max-width: 44.071rem;
+}
+.hero__block__text {
+  font-weight: 300;
+  line-height: 2rem;
+  color: #0f1c2e;
+  font-size: 1.714rem;
+}
+.hero__block__text-word {
+  color: #06bee1;
+}
+.hero__buttons {
+  max-width: 17.071rem;
+  width: 100%;
+  margin-right: 3.786rem;
+}
+.hero__button:nth-child(1) {
+  margin-bottom: 0.857rem;
+}
+
+.pluses {
+  margin-top: -37rem;
+  z-index: 99;
+  background: transparent;
+}
+.pluses__head {
+  font-family: "Myriad Pro";
+  font-size: 2.77rem;
+  color: #000;
+  background-color: #fff;
+  font-weight: 400;
+  padding: 20px 23px 16px 18px;
+  max-width: 21rem;
+  margin-bottom: 3.643rem;
+}
+.pluses__card {
+  justify-content: flex-end;
+  margin-right: 2.571rem;
+}
+.pluses__card:nth-child(1) {
+  margin-right: 11.214rem;
+}
+.pluses__card__title {
+  max-width: 30.643rem;
+  font-size: 24.428rem;
+  font-weight: 100;
+  color: #0f1c2e;
+  letter-spacing: -1.214rem;
+}
+.pluses__card__title-word {
+  font-size: 8rem;
+  color: #06bee1;
+  line-height: 5.714rem;
+  margin-left: 2.357rem;
 }
 
 @media screen and (max-width: 1200px) {
