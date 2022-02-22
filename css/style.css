@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Myriad Pro";
-  src: url("../fonts/MYRIADPRO-REGULAR.woff") format("woff"), url("../fonts/MYRIADPRO-REGULAR.woff2") format("woff2"), url("../fonts/MYRIADPRO-REGULAR.ttf") format("truetype");
+  src: url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -384,6 +384,22 @@ template {
   align-items: flex-start;
   justify-content: flex-start;
 }
+.card__heading {
+  font-size: 1.714rem;
+  font-weight: 700;
+  color: #0f1c2e;
+  line-height: 1;
+}
+.card__heading-words {
+  font-weight: 300;
+}
+.card__text {
+  margin-top: 2.214rem;
+  font-weight: 300;
+  line-height: 1;
+  color: #061826;
+  font-size: 1.142rem;
+}
 
 .container {
   max-width: 1140px;
@@ -428,6 +444,10 @@ img {
 
 .header {
   padding: 2.143rem 0;
+  position: fixed;
+  z-index: 13;
+  background-color: #fff;
+  width: 100%;
 }
 .header__logo {
   position: relative;
@@ -491,8 +511,11 @@ img {
 }
 
 .hero {
-  padding: 12.643rem 0 45.429rem;
-  background: url(../img/hero-bg.webp) no-repeat center/cover;
+  padding: 18rem 0 45.429rem;
+  background-image: url(../img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
   position: relative;
   z-index: -1;
 }
@@ -542,9 +565,14 @@ img {
 }
 
 .pluses {
-  margin-top: -37rem;
+  margin-top: -33rem;
   z-index: 99;
   background: transparent;
+  padding-bottom: 0;
+}
+.pluses .container {
+  padding-bottom: 8.286rem;
+  border-bottom: 2px solid #eaf1f7;
 }
 .pluses__head {
   font-family: "Myriad Pro";
@@ -554,7 +582,6 @@ img {
   font-weight: 400;
   padding: 20px 23px 16px 18px;
   max-width: 21rem;
-  margin-bottom: 3.643rem;
 }
 .pluses__card {
   justify-content: flex-end;
@@ -563,18 +590,60 @@ img {
 .pluses__card:nth-child(1) {
   margin-right: 11.214rem;
 }
+.pluses__card:nth-last-child {
+  margin-right: 0;
+}
 .pluses__card__title {
   max-width: 30.643rem;
   font-size: 24.428rem;
   font-weight: 100;
   color: #0f1c2e;
-  letter-spacing: -1.214rem;
+  letter-spacing: -2.214rem;
+  line-height: normal;
+  margin-top: -1.5rem;
 }
 .pluses__card__title-word {
   font-size: 8rem;
   color: #06bee1;
   line-height: 5.714rem;
   margin-left: 2.357rem;
+}
+.pluses__card__heading {
+  max-width: 20.5rem;
+}
+.pluses__card__heading:nth-child(1) {
+  max-width: 19.014rem;
+}
+.pluses__card__text {
+  max-width: 18.714rem;
+}
+.pluses__card__text:nth-child(1) {
+  max-width: 15.143rem;
+}
+.pluses__card__text:nth-child(2) {
+  max-width: 18.357rem;
+}
+
+.calculation {
+  padding-top: 7.929rem;
+}
+.calculation__title {
+  max-width: 35rem;
+  margin: auto;
+  margin-bottom: 4.571rem;
+}
+.calculation__head {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.571rem;
+  margin-bottom: 2.07rem;
+}
+.calculation__text {
+  text-align: center;
+  max-width: 26rem;
+  margin: auto;
+  font-size: 1.143rem;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 1200px) {

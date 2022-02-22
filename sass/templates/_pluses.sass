@@ -1,7 +1,11 @@
 .pluses
-    margin-top: -37rem
+    margin-top: -33rem
     z-index: 99
     background: transparent
+    padding-bottom: 0
+    .container
+        padding-bottom: 8.286rem
+        border-bottom: 2px solid $back
     &__head
         font-family: 'Myriad Pro'
         font-size: 2.77rem
@@ -10,22 +14,36 @@
         font-weight: 400
         padding: 20px 23px 16px 18px
         max-width: 21rem
-        margin-bottom: 3.643rem
     &__card
         justify-content: flex-end   
         margin-right: 2.571rem
         &:nth-child(1)
             margin-right: 11.214rem
-        &:nth-last-child()
+        &:nth-last-child
             margin-right: 0
         &__title
             max-width: 30.643rem
             font-size: 24.428rem
             font-weight: 100
             color: $black
-            letter-spacing: -1.214rem
+            letter-spacing: -2.214rem
+            line-height: normal
+            margin-top: -1.5rem
             &-word
                 font-size: 8rem
                 color: $secondary
                 line-height: 5.714rem
                 margin-left: 2.357rem
+        &__heading
+            max-width: 20.5rem
+            &:nth-child(1)
+                max-width: 19.014rem
+        &__text
+            max-width: 18.714rem
+            &:nth-child(1)
+                max-width: 15.143rem
+            &:nth-child(2)
+                max-width: 18.357rem
+
+                
+                
