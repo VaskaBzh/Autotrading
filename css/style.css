@@ -367,6 +367,7 @@ template {
   font-size: 1.214rem;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .button-primary {
   color: #fff;
@@ -410,6 +411,19 @@ template {
 .row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -686,15 +700,14 @@ img {
   margin-top: 2.214rem;
   max-width: 13rem;
 }
+.calculation__button {
+  max-width: 25.786rem;
+  margin-top: 5.143rem;
+  text-align: center;
+}
 
 .start {
   background: radial-gradient(circle 677px at center, #03256c 0%, #061826 100%), url(../img/start-bg.png) no-repeat right/cover;
-}
-.start__col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
 }
 .start__title {
   text-align: center;
@@ -720,7 +733,10 @@ img {
 
 .benefit {
   padding-bottom: 0;
-  background: #eaf1f7;
+  background-image: radial-gradient(circle 800px at bottom center, #fff 0%, #eaf1f7 100%);
+}
+.benefit .container {
+  background: url(../img/benefit-bg.webp) no-repeat center bottom;
 }
 .benefit__title {
   font-weight: 300;
@@ -729,21 +745,112 @@ img {
   max-width: 33.5rem;
   line-height: 3rem;
   margin: auto;
+  margin-bottom: 5.375rem;
 }
 .benefit__title-words {
   font-weight: 700;
 }
+.benefit .swiper {
+  max-width: 51.5rem;
+  width: 100%;
+}
 .benefit .swiper-slide {
-  height: 45.857rem;
+  height: 42rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
+.benefit .swiper-button-prev, .benefit .swiper-button-next {
+  width: 52px;
+  height: 16px;
+  outline: none;
+  margin-top: 4.5rem;
+}
+.benefit .swiper-button-prev::after, .benefit .swiper-button-next::after {
+  display: none;
+}
+.benefit .swiper-button-prev {
+  background: url(../img/prev.webp) no-repeat center;
+}
+.benefit .swiper-button-next {
+  background: url(../img/next.webp) no-repeat center;
+}
 .benefit-slide {
-  background: linear-gradient(to top, #f7fafc 0%, #e4edf6 100%), url(../img/phone-bg.webp) no-repeat bottom center/cover;
-  max-width: 21rem;
+  background: transparent url(../img/phone-bg.png) no-repeat bottom center/cover;
+  max-width: 23.5rem;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.benefit-slide-bg {
+  margin: auto;
+  margin-bottom: 0;
+  width: 87%;
+  height: 86.6%;
+  background-image: linear-gradient(to top, #f7fafc 0%, #eaf1f7 100%);
+  border-radius: 1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.benefit-nav {
+  position: absolute;
+  margin-top: 4.3rem;
+  font-weight: 300;
+  color: #061826;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+.benefit-before {
+  left: -73%;
+}
+.benefit-after {
+  right: -73%;
+}
+.benefit__img {
+  max-width: 64px;
+  min-height: 64px;
+  position: absolute;
+}
+.benefit__up {
+  top: 25%;
+  left: 50%;
+  margin-left: -23px;
+  max-width: 46px;
+}
+.benefit__rub {
+  top: 37%;
+  left: 50%;
+  margin-left: -32px;
+}
+.benefit__dollar {
+  top: 37%;
+  left: 23%;
+}
+.benefit__euro {
+  top: 37%;
+  right: 23%;
+}
+.benefit__head {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+}
+.benefit__text {
+  color: #000;
+  font-family: "Mariad Pro";
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1.214em;
+}
+.benefit__block {
+  max-width: 14.214rem;
+  margin: auto;
+  margin-bottom: 6rem;
 }
 
 @media screen and (max-width: 1200px) {
