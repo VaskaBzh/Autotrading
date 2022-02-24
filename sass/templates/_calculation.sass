@@ -1,5 +1,6 @@
 .calculation
     padding-top: 7.929rem
+    background: $light url(../img/calculation-bg.webp) no-repeat bottom / cover
     &__title
         max-width: 35rem
         margin: auto
@@ -15,3 +16,36 @@
         margin: auto
         font-size: 1.143rem
         font-weight: 300
+    &__card
+        max-width: 19.214rem
+        &-calculator
+            max-width: 23.429rem
+            width: 100%
+        &-algo
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &:nth-last-child(1)
+                margin-top: 2.214rem
+        &__variable
+            padding-left: 1.286rem
+            padding-bottom: 1.286rem
+            padding-top: 1.286rem
+            max-width: 7rem
+            width: 100%
+            min-height: 3.429rem
+            border: 1px solid $outline
+            border-radius: 4px
+            color: $dark
+            font-weight: 700
+            font-size: 1.286rem
+            text-align: left
+        &__text
+            margin-top: 0
+            max-width: 15.071rem
+            width: 100%
+            text-align: left
+            &-small
+                margin-top: 2.214rem
+                max-width: 13rem

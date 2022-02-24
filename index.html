@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Autotrading</title>
 </head>
 <body>
@@ -57,7 +58,7 @@
                         <div class="card pluses__card">
                             <span class="pluses__card__title">95<span class="pluses__card__title-word">%</span></span>
                             <p class="pluses__card__heading card__heading">Увеличение прибыли
-                                на&nbspфинансовых рынках</p>
+                                на&nbsp;финансовых рынках</p>
                             <p class="pluses__card__text card__text">Отсутствие эмоций у робота позволяет в разы увеличить эффективность</p>
                         </div>
                         <div class="card pluses__card">
@@ -65,7 +66,7 @@
                                 <img src="../img/loop.webp" alt="" class="pluses__card__title-img">
                             </span>
                             <p class="pluses__card__heading card__heading">Глубокий <span class="pluses__card__heading-words card__heading-words"> анализ
-                                и&nbspскорость</span></p>
+                                и&nbsp;скорость</span></p>
                             <p class="pluses__card__text card__text">Полноценный анализ финансовых инструментов по разработанным математическим алгоритмам
                                 за доли секунд</p>
                         </div>
@@ -91,8 +92,8 @@
             <div class="container">
                 <div class="calculation__title">
                     <h2 class="calculation__head">Создайте своего
-                        авторского&nbspторгового робота</h2>
-                    <p class="calculation__text">получайте прибыль даже с нулевыми&nbspзнаниями
+                        авторского&nbsp;торгового робота</h2>
+                    <p class="calculation__text">получайте прибыль даже с нулевыми&nbsp;знаниями
                         в сфере алгоритмической торговли</p>
                 </div>
                 <!-- /.calculation__title -->
@@ -102,8 +103,31 @@
                             <h2 class="calculation__card__heading card__heading">Сколько бы Вы
                                 заработали<span class="calcutaion__card__heading-words card__heading-words">, используя
                                     торгового робота</span></h2>
-                            <p class="calculation__card__text card__text">Просто введите данные
+                            <p class="calculation__card__text-small card__text">Просто введите данные
                                 и сравните результаты </p>
+                        </div>
+                        <div class="card calculation__card-calculator">
+                            <div class="calculation__card-algo">
+                                <input type="text" id="calculate" class="calculation__card__variable"></input>
+                                <p class="calculation__card__text card__text">Количество инструментов,
+                                    по которым Вы торгуете</p>
+                            </div>
+                            <div class="calculation__card-algo">
+                                <input type="text" id="calculate" class="calculation__card__variable"></input>
+                                <p class="calculation__card__text card__text">Количество инструментов
+                                    Вашего брокера</p>
+                            </div>
+                        </div>
+                        <div class="card calculation__card-calculator">
+                            <div class="calculation__card-algo">
+                                <input type="text" id="calculate" class="calculation__card__variable"></input>
+                                <p class="calculation__card__text card__text">Средняя месячная		
+                                    прибыль&nbsp;(%)   </p>
+                            </div>
+                            <div class="calculation__card-algo">
+                                <input type="text" id="calculate" class="calculation__card__variable"></input>
+                                <p class="calculation__card__text card__text">Сумма депозита($)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -112,6 +136,46 @@
             <!-- /.container -->
         </section>
         <!-- /.section calculation -->
+        <section class="section start">
+            <div class="container">
+                <div class="start__col">
+                    <h2 class="start__title">Обучитесь алгоритмической торговле
+                        и уже <span class="start__title-word">через 30 дней</span> создайте
+                        своего&nbsp;эффективного торгового робота!</h2>
+                    <button class="button button-outline start__button">Начать обучение</button>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section start -->
+        <section class="section benefit">
+            <div class="container">
+                <h2 class="benefit__title"><span class="benefit__title-words">Какие выгоды </span>я получу
+                    от&nbsp;создания своего робота?</h2>
+                    <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="benefit-slide">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev benefit__swiper__button-prev"></div>
+                    <div class="swiper-button-next benefit__swiper__button-next"></div>
+                </div>
+  
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section benefit -->
     </main>
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
