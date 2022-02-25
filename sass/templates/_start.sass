@@ -1,5 +1,6 @@
 .start
-    background: radial-gradient(circle 677px at center, $gradientOf 0%, $gradientTo 100%), url(../img/start-bg.png)  no-repeat right /cover
+    background: url(../img/start-bg.png)  no-repeat right /cover, radial-gradient(circle 677px at center, $gradientOf 0%, $gradientTo 100%)
+    position: relative
     &__title
         text-align: center
         font-size: 1.875rem
@@ -7,6 +8,7 @@
         max-width: 35.786rem
         line-height: normal
         color: $light
+        z-index: 10
         &-word
             color: $secondary
     &__button
@@ -18,3 +20,12 @@
         font-size: 1.214rem
         font-weight: 700
         text-transform: uppercase
+        z-index: 10
+    &__shadow
+        background: radial-gradient(circle 677px at center, $gradientOf 0%, $gradientTo 100%)
+        opacity: 0.6
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
