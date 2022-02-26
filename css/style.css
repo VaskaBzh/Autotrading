@@ -424,7 +424,7 @@ template {
   justify-content: flex-start;
 }
 .col-50 {
-  flex-basis: 48%;
+  width: 48%;
 }
 .col-25 {
   flex-basis: 24%;
@@ -568,7 +568,7 @@ img {
 }
 
 .hero {
-  padding: 18rem 0 45.429rem;
+  padding: 18rem 0 55.429rem;
   background-image: url(../img/hero-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -621,7 +621,7 @@ img {
 }
 
 .pluses {
-  margin-top: -33rem;
+  margin-top: -38rem;
   z-index: 3;
   background: transparent;
   padding-bottom: 0;
@@ -1020,8 +1020,8 @@ img {
 }
 
 .process {
-  background: url(../img/process-bg.png) no-repeat bottom;
-  padding-bottom: 6rem;
+  background: url(../img/process-bg.png) no-repeat bottom/cover;
+  padding-bottom: 27rem;
 }
 .process__head {
   text-align: left;
@@ -1048,6 +1048,113 @@ img {
 
 .lessons {
   background: url(../img/lessons-bg.webp) no-repeat left bottom, radial-gradient(circle 1426px at center, #03256c 0%, #061826 100%);
+  margin-top: -21rem;
+}
+.lessons .swiper {
+  color: #fff;
+  min-height: 31.714rem;
+}
+.lessons .swiper-pagination {
+  top: 0;
+  left: 10.786rem;
+}
+.lessons .swiper-pagination-text {
+  font-size: 1.143rem;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.lessons .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.2);
+}
+.lessons .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #06bee1;
+}
+.lessons .swiper-second {
+  width: 100%;
+}
+.lessons .swiper-button-prev, .lessons .swiper-button-next {
+  position: relative;
+  width: 52px;
+  height: 16px;
+  outline: none;
+  margin-top: 0;
+  z-index: 3;
+}
+.lessons .swiper-button-prev::after, .lessons .swiper-button-next::after {
+  display: none;
+}
+.lessons .swiper-button-prev {
+  background: url(../img/prev-white.webp) no-repeat center;
+}
+.lessons .swiper-button-next {
+  background: url(../img/next-white.webp) no-repeat center;
+}
+.lessons__title {
+  font-size: 2.143rem;
+  font-weight: 700;
+}
+.lessons__heading {
+  font-size: 1.143rem;
+  margin-top: 5.286rem;
+}
+.lessons__list {
+  font-size: 1.143rem;
+  font-weight: 300;
+  max-width: 24.429rem;
+  width: 100%;
+  list-style-type: upper-alpha;
+  margin: 2.643rem 1.5rem 3.571rem;
+  min-height: 11.739rem;
+}
+.lessons__list-second {
+  max-width: 30.429rem;
+  margin-bottom: 1.571rem;
+}
+.lessons__element {
+  margin-bottom: 1.786rem;
+  padding-left: 0.357rem;
+}
+.lessons__element:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.lessons__text {
+  max-width: 29.357rem;
+  font-size: 1.143rem;
+  opacity: 0.3;
+}
+.lessons__text-limited {
+  max-width: 25.357rem;
+}
+.lessons__buttons {
+  max-width: 39.714rem;
+  width: 100%;
+}
+.lessons__button {
+  color: #fff;
+  max-width: 18.786rem;
+}
+.lessons__button:nth-last-child(1) {
+  border: 1px solid #fff;
+}
+.lessons__nav {
+  margin-top: 6.571rem;
+}
+.lessons__bonus {
+  margin-top: 2rem;
+  max-width: 31.143rem;
+}
+.lessons__bonus-img {
+  margin-right: 2.214rem;
 }
 
 @media screen and (max-width: 1200px) {

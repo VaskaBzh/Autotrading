@@ -1,2 +1,86 @@
 .lessons
     background: url(../img/lessons-bg.webp) no-repeat left bottom, radial-gradient(circle 1426px at center, $gradientOf 0%, $gradientTo 100%)
+    margin-top: -21rem
+    .swiper
+        color: $light
+        min-height: 31.714rem
+        &-pagination
+            top: 0
+            left: 10.786rem
+            &-text
+                font-size: 1.143rem
+                opacity: 0.3
+                position: absolute
+                top: 0
+                left: 0
+            &-bullet
+                width: 20px
+                height: 20px
+                text-align: center
+                line-height: 20px
+                font-size: 12px
+                color: #000
+                opacity: 1
+                background: rgba($light, 0.2)
+                &-active
+                    color: $light
+                    background: $secondary
+        &-second
+            width: 100%
+        &-button
+            &-prev, &-next
+                position: relative
+                width: 52px
+                height: 16px
+                outline: none
+                margin-top: 0
+                z-index: 3
+                &::after
+                 display: none
+            &-prev
+                background: url(../img/prev-white.webp) no-repeat center
+            &-next 
+                background: url(../img/next-white.webp) no-repeat center
+    &__title
+        font-size: 2.143rem
+        font-weight: 700
+    &__heading
+        font-size: 1.143rem
+        margin-top: 5.286rem
+    &__list
+        font-size: 1.143rem
+        font-weight: 300
+        max-width: 24.429rem
+        width: 100%
+        list-style-type: upper-alpha
+        margin: 2.643rem 1.5rem 3.571rem
+        min-height: 11.739rem
+        &-second
+            max-width: 30.429rem
+            margin-bottom: 1.571rem
+    &__element 
+        margin-bottom: 1.786rem
+        padding-left: 0.357rem
+        &:nth-last-child(1)
+            margin-bottom: 0
+    &__text
+        max-width: 29.357rem
+        font-size: 1.143rem
+        opacity: 0.3
+        &-limited
+            max-width: 25.357rem
+    &__buttons
+        max-width: 39.714rem
+        width: 100%
+    &__button
+        color: $light
+        max-width: 18.786rem
+        &:nth-last-child(1)
+            border: 1px solid $light
+    &__nav
+        margin-top: 6.571rem
+    &__bonus
+        margin-top: 2rem
+        max-width: 31.143rem
+        &-img
+            margin-right: 2.214rem
