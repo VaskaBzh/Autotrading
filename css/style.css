@@ -429,6 +429,9 @@ template {
 .col-25 {
   flex-basis: 24%;
 }
+.col-30 {
+  flex-basis: 29%;
+}
 
 .center {
   display: flex;
@@ -1156,6 +1159,38 @@ img {
 }
 .lessons__bonus-img {
   margin-right: 2.214rem;
+}
+
+.advantage {
+  background-image: radial-gradient(circle 800px at bottom center, #fff 0%, #eaf1f7 100%);
+}
+.advantage__head-words {
+  text-align: center;
+  font-size: 2rem;
+}
+.advantage__intensive {
+  margin: 4.286rem 0 4.571rem;
+}
+.advantage__heading {
+  text-align: center;
+  margin: 1.5rem auto 0.5rem;
+  font-size: 1.25rem;
+}
+.advantage__title {
+  margin: 0 auto;
+}
+.advantage__text {
+  text-align: center;
+  margin-top: 0;
+}
+.advantage__col {
+  min-height: 9.643rem;
+}
+.advantage__col-hight {
+  min-height: 11.786rem;
+}
+.advantage__block {
+  margin-top: 1.786rem;
 }
 
 @media screen and (max-width: 1200px) {
