@@ -404,6 +404,19 @@ template {
   color: #061826;
   font-size: 1.142rem;
 }
+.card__text-block {
+  min-height: 15.714rem;
+}
+.card__price {
+  color: #06bee1;
+  font-size: 1.714rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+.card__button {
+  max-width: 12.929rem;
+  margin-top: 2.429rem;
+}
 
 .container {
   max-width: 1140px;
@@ -424,7 +437,7 @@ template {
   justify-content: flex-start;
 }
 .col-50 {
-  width: 48%;
+  width: 47.6%;
 }
 .col-25 {
   flex-basis: 24%;
@@ -1131,6 +1144,9 @@ img {
 .lessons__element:nth-last-child(1) {
   margin-bottom: 0;
 }
+.lessons__element::marker {
+  color: rgba(255, 255, 255, 0.3);
+}
 .lessons__text {
   max-width: 29.357rem;
   font-size: 1.143rem;
@@ -1162,7 +1178,7 @@ img {
 }
 
 .advantage {
-  background-image: radial-gradient(circle 800px at bottom center, #fff 0%, #eaf1f7 100%);
+  background: #eaf1f7;
 }
 .advantage__head-words {
   text-align: center;
@@ -1191,6 +1207,16 @@ img {
 }
 .advantage__block {
   margin-top: 1.786rem;
+}
+
+.learning__text {
+  max-width: 25.429rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 2.643rem;
+}
+.learning .card__text {
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {

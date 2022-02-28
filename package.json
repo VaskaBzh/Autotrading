@@ -18,6 +18,7 @@
   "homepage": "https://github.com/VaskaBzh/Autotrading#readme",
   "dependencies": {
     "browser-sync": "^2.27.7",
+    "download": "^8.0.0",
     "gulp": "^4.0.2",
     "jquery": "^3.6.0"
   },
