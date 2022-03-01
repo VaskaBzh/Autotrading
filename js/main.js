@@ -31,5 +31,15 @@ $(function () {
           prevEl: '.lessons__swiper__button-prev',
         },
       });
+
+      const thirdSwiper = new Swiper('.swiper-third', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // autoplay: {
+        //   delay: 5000,
+        // },
+       });
     
 });
