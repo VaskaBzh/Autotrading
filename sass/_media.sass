@@ -1,10 +1,148 @@
 @media screen and ( max-width: 1200px )
     html
         font-size: 12px
+    .container
+        width: 95%
+    .hero
+        background: url(../img/hero-bg.png) no-repeat left
 
 @media screen and ( max-width: 992px )
+    .cashback 
+        background: $back
+    .pluses__head
+        max-width: 22rem
+    .hero__text
+        font-size: 1.5rem
+        max-width: 34rem
+    .footer-upper__title
+        font-size: 2rem
+    .footer-below__subtitle
+        font-size: 1.2rem
+        max-width: 10rem
+    .footer-contacts__item
+        font-size: 1.2rem
+    .footer-links__item
+        font-size: 1.2rem
 
 @media screen and ( max-width: 760px)
+    .header__logo
+        display: none
+    .row
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+    .pluses__card
+        &:nth-child(1)
+            margin-right: 0
+        &__title
+            margin: auto
+            text-align: center
+            max-width: 20.5rem
+            &:nth-child(0)
+                margin-left: -65px
+        &__text
+            max-width: 20.5rem
+    .card
+        margin-right: 0
+        margin-bottom: 15px
+        &__title
+            margin-right: auto
+            margin-left: auto
+        &__heading
+            text-align: center
+            margin-right: auto
+            margin-left: auto
+        &__text
+            text-align: center
+            margin-right: auto
+            margin-left: auto
+    .training__col
+        width: 50%
+    .training__card
+        width: 70%
+        &__heading
+            margin-left: 0
+            &:nth-child(2)
+                margin-left: 38px
+        &__text
+            margin-left: 0
+    .process
+        &__block
+            flex-direction: row
+            flex-wrap: wrap
+        &__head
+            margin-left: auto
+            margin-right: auto
+            text-align: center
+        &__card__head
+            margin: auto
+    .lessons
+        .row
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction
+        top: 25px
+    .swiper-pagination-text
+        left: 35px
+    .lessons__bonus-img
+        margin-right: auto
+        margin-left: 0
+        margin-bottom: 10px
+    .lessons__list-second
+        max-width: 25.429rem
+    .advantage
+        .row
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+    .learning
+        .row
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+    .results
+        &-container
+            flex-direction: column
+            align-items: center
+        .row
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+        .col:nth-child(0)
+            width: 100%
+            margin-bottom: 25px
+        .title
+            &__head
+                margin-left: auto
+                margin-right: auto
+                text-align: center
+                text-align-last: center
+            &__text
+                max-width: 80%
+                margin-left: auto
+                margin-right: auto
+                margin-bottom: 25px
+                text-align: center
+                text-align-last: center
+        &-examples
+            width: 47%
+    .questions
+        .first
+            &__form
+                flex-wrap: wrap
+            &__button
+                margin-left: auto
+                margin-right: auto
+                margin-top: 25px
+            &__input:nth-child(3)
+                margin-right: 0
+    .footer
+        .row
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
 
 @media screen and ( max-width: 570px )
 

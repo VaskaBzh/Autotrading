@@ -16,6 +16,9 @@ img
 .section
     padding: 8.571rem 0
 .title
+    display: flex
+    flex-direction: column
+    align-items: center
     &__head
         color: $black
         font-size: 2.571rem
@@ -29,6 +32,11 @@ img
         font-weight: 300
         text-align: center
         line-height: 1.714rem
+    &--left
+        flex-direction: column
+        align-items: left
+        justify-content: flex-start
+        text-align-last: left
 .video
     max-width: 67.5rem
     width: 100%
@@ -39,7 +47,32 @@ img
         position: absolute
         width: 64px
         height: 64px
-        margin-top: -32px
-        margin-left: -32px
         left: 50%
         top: 50%
+        margin-top: -32px
+        margin-left: -32px
+
+#button
+    display: inline-block
+    background: $light url('../img/arrow-up.svg') no-repeat center
+    width: 50px
+    height: 50px
+    text-align: center
+    border: 1px solid $primary
+    border-radius: 50%
+    position: fixed
+    bottom: 30px
+    right: 30px
+    transition: all .5s
+    opacity: 0
+    visibility: hidden
+    z-index: 1000
+    &::after
+        content: ''
+        color: #fff
+    &:hover
+        cursor: pointer
+        background-color: lighten($secondary, 10%)
+    &.show
+        opacity: 1
+        visibility: visible

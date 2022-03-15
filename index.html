@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Autotrading</title>
 </head>
@@ -29,6 +31,7 @@
     </header>
     <!-- /.header -->
     <main>
+        <a id="button"></a>
         <section class="section hero">
             <div class="container">
                 <div class="hero__title">
@@ -789,7 +792,7 @@
                 <p class="first__text title__text">Просто внеситеВаши данные в форму прям сейчас,
                     и&nbsp;мы&nbsp;сразу&nbsp;Вам&nbsp;вышлем&nbsp;подборку&nbsp;первых&nbsp;видеоуроков.
                     Убедитесь сами!</p>
-                    <form action="#" class="form first__form">
+                    <form  action="send.php" method="post"  class="form first__form">
                         <input type="text" class="input first__input" placeholder="Имя">
                         <input type="tel" class="input first__input" placeholder="Телефон">
                         <input type="email" class="input first__input" placeholder="Email">`
@@ -801,29 +804,215 @@
         <!-- /.section first -->
         <section class="section feedback">
             <div class="container">
-                <h2 class="title__head feedback__head"><span class="title__head-words">Отзывы</span> наших учеников</h2>
-                <div class="feedback__block"><div class="swiper swiper-third">
+                <div class="title">
+                    <h2 class="title__head"><span class="title__head-words">Отзывы</span> наших учеников</h2>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper feedback-swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <div class="feedback__block">
-                                <div class="feedback__person">
-                                    <img src="../img/video-button.wwebp" alt="" class="feedback__person-img">
-                                </div>
+                            <div class="feedback__video video">
+                                <img src="./img/video-button.webp" alt="Пуск видео" class="video__btn">
                             </div>
+                            <!-- /.steps__video video -->
+                            <div class="feedback-content">
+                                <h3 class="title__head feedback__title">Алиса</h3>
+                                <p class="title__text feedback__text">Впервые с финансовыми рынками столкнулась в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. Первый заработок составил 12 тысяч долларов, правда, виртуальных.</p>
+                            </div>
+                            <!-- /.feedback__content -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback__video video">
+                                <img src="./img/video-button.webp" alt="Пуск видео" class="video__btn">
+                            </div>
+                            <!-- /.steps__video video -->
+                            <div class="feedback-content">
+                                <h3 class="title__head feedback__title">Алиса</h3>
+                                <p class="title__text feedback__text">Впервые с финансовыми рынками столкнулась в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. Первый заработок составил 12 тысяч долларов, правда, виртуальных.</p>
+                            </div>
+                            <!-- /.feedback__content -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback__video video">
+                                <img src="./img/video-button.webp" alt="Пуск видео" class="video__btn">
+                            </div>
+                            <!-- /.steps__video video -->
+                            <div class="feedback-content">
+                                <h3 class="title__head feedback__title">Алиса</h3>
+                                <p class="title__text feedback__text">Впервые с финансовыми рынками столкнулась в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. Первый заработок составил 12 тысяч долларов, правда, виртуальных.</p>
+                            </div>
+                            <!-- /.feedback__content -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback__video video">
+                                <img src="./img/video-button.webp" alt="Пуск видео" class="video__btn">
+                            </div>
+                            <!-- /.steps__video video -->
+                            <div class="feedback-content">
+                                <h3 class="title__head feedback__title">Алиса</h3>
+                                <p class="title__text feedback__text">Впервые с финансовыми рынками столкнулась в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. Первый заработок составил 12 тысяч долларов, правда, виртуальных.</p>
+                            </div>
+                            <!-- /.feedback__content -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback__video video">
+                                <img src="./img/video-button.webp" alt="Пуск видео" class="video__btn">
+                            </div>
+                            <!-- /.steps__video video -->
+                            <div class="feedback-content">
+                                <h3 class="title__head feedback__title">Алиса</h3>
+                                <p class="title__text feedback__text">Впервые с финансовыми рынками столкнулась в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. Первый заработок составил 12 тысяч долларов, правда, виртуальных.</p>
+                            </div>
+                            <!-- /.feedback__content -->
                         </div>
                     </div>
                 </div>
-                
             </div>
             <!-- /.container -->
         </section>
         <!-- /.section feedback -->
+        <section class="section results">
+            <div class="container">
+                <div class="results-container">
+                    <div class="col">
+                        <div class="title--left">
+                            <h2 class="title__head"><span class="title__head-words">Результаты</span class="title__head-words"> наших учеников</h2>
+                            <p class="title__text">С нами наши ученики научились эффективно торговать на международных рынках</p>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="row">
+                        <div class="col results-examples">
+                            <img src="./img/results-img1.jpeg" alt="Пример" class="results-examples__img">
+                            <h3 class="results-examples__name">Мария, январь 2019</h3>
+                            <p class="results-examples__text">Методом проб и ошибок смог определить необходимые качества успешного трейдера, 70% которых составляет психологическая и эмоциональная устойчивость во время трейдинга</p>
+                        </div>
+                        <!-- /.col results-examples -->
+                        <div class="col results-examples">
+                            <img src="./img/results-img2.jpeg" alt="Пример" class="results-examples__img">
+                            <h3 class="results-examples__name">Иван, январь 2019</h3>
+                            <p class="results-examples__text">Алготрейдинг — это свежее дыхание в мире финансовой аналитики, новые научные подходы к обучению и только качественная информация</p>
+                        </div>
+                        <!-- /.col results-examples -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section results -->
+        <section class="section cashback">
+            <div class="container">
+                <div class="title">
+                    <h2 class="title__head">Мы вернем Вам 100% вложенных средств, если Вам не понравятся первые 3 урока</h2>
+                    <button class="button button-primary">Приступить к созданию своего доходного робота</button>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section cashback -->
+        <section class="section learning">
+            <div class="container">
+                <h2 class="title__head learning__head"><span class="title__head-words">Сколько </span>стоит обучение?</h2>
+                <p class="title__text learning__text">Станьте частью алготрейдинга прямо сейчас
+                    и&nbsp;всего за месяц прямо на сессиях создайте своего эффективного торгового робота с нуля!</p>
+                <div class="row learning__row">
+                    <div class="card col-30 col learning__col">
+                        <h3 class="card__heading">Gold</h3>
+                        <span class="card__price">$297</span><div class="card__text-block">
+                            <p class="card__text">Начитка лекций</p>
+                            <p class="card__text">Практика </p>
+                            <p class="card__text">Ответы на вопросы </p>
+                            <p class="card__text">Тех. поддержка </p>
+                        </div>
+                        <button class="card__button button button-outline learning__button">Купить</button>
+                    </div>
+                    <div class="card col-30 col learning__col">
+                        <h3 class="card__heading">Premium</h3>
+                        <span class="card__price">$497</span><div class="card__text-block">
+                            <p class="card__text">Обучение с куратором</p>
+                            <p class="card__text">Постоянная возможность
+                                связаться&nbsp;с&nbsp;преподователем</p>
+                            <p class="card__text">Практика</p>
+                        </div>
+                        <button class="card__button button button-outline learning__button">Купить</button>
+                    </div>
+                    <div class="card col-30 col learning__col">
+                        <h3 class="card__heading">VIP</h3>
+                        <span class="card__price">$997</span><div class="card__text-block">
+                            <p class="card__text learning__col-min">Полностью индивидуальное
+                                обучение!</p>
+                            <p class="card__text learning__col-min">Индивидуальная
+                                программа </p>
+                            <p class="card__text">Максимум практики</p>
+                        </div>
+                        <button class="card__button button button-outline learning__button">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section learning -->
+        <section class="section questions">
+            <div class="container">
+                <div class="title">
+                    <h2 class="title__head">Остались вопросы?</h2>
+                    <p class="title__text">Оставьте свои контактные данные и мы с Вами свяжемся в самое ближайшее время</p>
+                </div>
+                <form action="send.php" method="post" class="form first__form">
+                        <input type="text" name="userName" class="input first__input" id="question-user-name" placeholder="Имя">
+                        <input type="tel" name="userPhone" class="input first__input" id="question-user-phone" placeholder="Телефон">
+                        <input type="email" name="userEmail" class="input first__input" id="question-user-mail" placeholder="Email">
+                    <button class="button button-primary first__button">Свяжитесь со мной</button> 
+                </form>
+                <!-- /.form first__form -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section questions -->
     </main>
+    <footer class="section footer">
+        <div class="container">
+            <div class="row footer-upper">
+                <h2 class="footer-upper__title">Алготрейдинг</h2>
+                <input type="email" name="userEmail" class="footer-upper__email" placeholder="E-mail рассылка">
+            </div>
+            <!-- /.row footer-upper-->
+            <div class="row footer-below">
+                <p class="footer-below__subtitle">Обучение алгоритмической торговле</p>
+                <div class="footer-contacts">
+                    <a href="#" class="footer-contacts__item">Аналитика</a>
+                    <a href="#" class="footer-contacts__item">О проекте</a>
+                    <a href="#" class="footer-contacts__item">Контакты</a>
+                </div>
+                <!-- /.footer-below__contacts -->
+                <div class="footer-links">
+                    <a href="#" class="footer-links__item">Вопросы и ответы</a>
+                    <a href="#" class="footer-links__item">Записаться на курс</a>
+                </div>
+                <!-- /.footer-links -->
+                <div class="footer-social">
+                    <a href="#" class="footer-social__link"></a>
+                    <a href="#" class="footer-social__link"></a>
+                    <a href="#" class="footer-social__link"></a>
+                    <a href="#" class="footer-social__link"></a>
+                    <a id="button1" class="footer-social__link"></a>
+                </div>
+                <!-- /.footer-social -->
+            </div>
+            <!-- /.row footer-below -->
+        </div>
+        <!-- /.container -->
+    </footer>
     
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
