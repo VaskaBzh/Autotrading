@@ -2,7 +2,7 @@
     html
         font-size: 12px
     .container
-        width: 95%
+        width: 90%
     .hero
         background: url(../img/hero-bg.png) no-repeat left
 
@@ -27,14 +27,7 @@
 @media screen and ( max-width: 760px)
     .header__logo
         display: none
-    .row
-        display: flex
-        flex-direction: column
-        align-items: center
-        justify-content: flex-start
     .pluses__card
-        &:nth-child(1)
-            margin-right: 0
         &__title
             margin: auto
             text-align: center
@@ -57,16 +50,22 @@
             text-align: center
             margin-right: auto
             margin-left: auto
-    .training__col
-        width: 50%
-    .training__card
-        width: 70%
-        &__heading
-            margin-left: 0
-            &:nth-child(2)
-                margin-left: 38px
-        &__text
-            margin-left: 0
+    .training
+        .row
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: flex-start
+        &__col
+            width: 50%
+        &__card
+            width: 70%
+            &__heading
+                margin-left: 0
+                &:nth-child(2)
+                    margin-left: 38px
+            &__text
+                margin-left: 0
     .process
         &__block
             flex-direction: row
@@ -77,39 +76,18 @@
             text-align: center
         &__card__head
             margin: auto
-    .lessons
-        .row
-            flex-direction: row
-            flex-wrap: wrap
-            justify-content: space-between
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction
         top: 25px
     .swiper-pagination-text
         left: 35px
     .lessons__bonus-img
-        margin-right: auto
-        margin-left: 0
-        margin-bottom: 10px
+        margin-left: 1px
     .lessons__list-second
         max-width: 25.429rem
-    .advantage
-        .row
-            flex-direction: row
-            flex-wrap: wrap
-            justify-content: space-between
-    .learning
-        .row
-            flex-direction: row
-            flex-wrap: wrap
-            justify-content: space-between
     .results
         &-container
             flex-direction: column
             align-items: center
-        .row
-            flex-direction: row
-            flex-wrap: wrap
-            justify-content: space-between
         .col:nth-child(0)
             width: 100%
             margin-bottom: 25px
@@ -138,12 +116,181 @@
                 margin-top: 25px
             &__input:nth-child(3)
                 margin-right: 0
+    .calculation
+        .row
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: flex-start
+
+@media screen and ( max-width: 570px )
+    .row
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+    .header
+        .row
+            flex-direction: row
+            justify-content: space-between
+        &__nav
+            display: none
+        &__logo
+            display: block
+            margin-bottom: 20px
+    .hero
+        &__head
+            text-align: center
+        &__heading
+            text-align: center
+        &__text
+            text-align: center
+            margin-left: auto
+            margin-right: auto
+        .row
+            flex-direction: row
+            justify-content: space-between
+    .benefit-before
+        left: -57%
+        transform: rotate(-90deg)
+        margin-top: -50px
+    .benefit-after
+        transform: rotate(90deg)
+        margin-top: -75px
+        right: -69%
+    .example__video
+        background: #eaf1f7 url(../img/video-bg.webp) right top no-repeat
+    .video
+        min-height: 23.643rem
+    .lessons
+        display: block
+    .advantage
+        &__col 
+            max-width: 312px
+            margin-left: auto
+            margin-right: auto
+            &-hight
+                max-width: 312px
+                margin-left: auto
+                margin-right: auto
+    .training__card:nth-child(1) 
+        background: radial-gradient(circle 611px at center, #03256c 0%, #061826 100%)
+    .training__card:nth-child(2) 
+        background: radial-gradient(circle 611px at center, #03256c 0%, #061826 100%)
+    .training__card
+        padding: 0
+        justify-content: center
+        align-items: center
+    .training
+        &__card
+            &__heading
+                margin-right: 0
+                &:nth-child(2)
+                    margin-left: 0
+            &__text
+                margin-right: 0
+    .lessons
+        .row
+            &:nth-child(1)
+                align-items: flex-start
+            .col-50
+                .swiper
+                    .row
+                        align-items: flex-start
+        &__bonus-img
+            margin-bottom: 10px
+        &__buttons 
+            flex-direction: column
+        &__nav
+            flex-direction: row
+            justify-content: space-between
+        .col-50
+            width: 100%
+        .swiper-pagination
+            top: 0
+        &__button:nth-child(1)
+            margin-bottom: 10px
+    .learning
+        &__col
+            max-width: 125px
+            border-right: none
+            margin-bottom: 25px
+            &:nth-child(3)
+                margin-bottom: 0
+    .results
+        .row
+            flex-direction: row
+            justify-content: space-between
+    .first
+        &__input
+            margin-top: 25px
+        &__form
+            margin-bottom: 20px
     .footer
         .row
             flex-direction: row
+            justify-content: space-between
+        &-social
+            width: 38%
             flex-wrap: wrap
             justify-content: space-between
-
-@media screen and ( max-width: 570px )
+            margin-top: 10px
+            &__link:nth-of-type(3)
+                margin-right: 0
+            &__link:nth-of-type(5)
+                margin-top: 5px
+            &__link:nth-of-type(4)
+                margin-top: 5px
+        &-below__subtitle
+            display: none
+    .pluses__card
+        margin-left: auto
+        margin-right: auto
 
 @media screen and ( max-width: 375px )
+    .header
+        max-width: 375px
+        .row
+            flex-direction: column
+            align-items: center
+    .hero__head
+        font-size: 4rem
+    .pluses__card__title
+        max-width: 100%
+        text-align: left
+        &-img
+            margin: auto
+        &-word
+            margin-left: 1rem
+    #button
+        right: 60px
+    .start
+        background: radial-gradient(circle 677px at center, #03256c 0%, #061826 100%)
+    .benefit
+        &-after
+            right: -41%
+        &-before
+            left: -28%
+    .example__video
+        background: #eaf1f7 url(../img/video-bg.webp) center top no-repeat
+    .training__card__text
+        max-width: 15.786rem
+    .lessons .swiper-pagination
+        top: 25px
+    .questions
+        padding-bottom: 21rem
+        .first
+            &__input
+                max-width: 100%
+            &__button
+                max-width: 100%
+    .footer
+        &-links
+            border-top: none
+        &-contacts
+            border-top: none
+        .row:nth-child(1)
+            flex-direction: column
+            align-items: center
+        &-upper__title
+            margin-bottom: 10px

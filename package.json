@@ -20,6 +20,10 @@
     "browser-sync": "^2.27.7",
     "download": "^8.0.0",
     "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-html-minify": "^0.0.14",
+    "gulp-js-minify": "^0.0.3",
+    "gulp-tinypng-compress": "^1.2.5",
     "jquery": "^3.6.0"
   },
   "devDependencies": {

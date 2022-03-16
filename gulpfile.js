@@ -2,10 +2,10 @@ const {src, dest, watch, series} = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
-// const cleanCSS = require('gulp-clean-css');
-// const minifyjs = require('gulp-js-minify');
-// const htmlmin = require('gulp-html-minify');
-// const tinypng = require('gulp-tinypng-compress');
+const cleanCSS = require('gulp-clean-css');
+const minifyjs = require('gulp-js-minify');
+const htmlmin = require('gulp-html-minify');
+const tinypng = require('gulp-tinypng-compress');
 
 // Static server
 function bs() {
@@ -32,50 +32,50 @@ function serveSass() {
         .pipe(browserSync.stream());
 };
 
-// function buildCSS(done) {
-//     src('css/**/**.css')
-//         .pipe(cleanCSS({compatibility: 'ie8'}))
-//         .pipe(dest('dist/css/'));
-//     done();
-// }
+function buildCSS(done) {
+    src('css/**/**.css')
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(dest('dist/css/'));
+    done();
+}
 
-// function buildJS(done) {
-//     src(['js/**.js', '!js/**.min.js'])
-//         .pipe(minifyjs())
-//         .pipe(dest('dist/js/'));
-//     src('js/**.min.js').pipe(dest('dist/js/'));
-//     done();
-// }
+function buildJS(done) {
+    src(['js/**.js', '!js/**.min.js'])
+        .pipe(minifyjs())
+        .pipe(dest('dist/js/'));
+    src('js/**.min.js').pipe(dest('dist/js/'));
+    done();
+}
 
-// function html(done) {
-//     src('**.html')
-//         .pipe(htmlmin())
-//         .pipe(dest('dist/'));
-//     done();
-// }
+function html(done) {
+    src('**.html')
+        .pipe(htmlmin())
+        .pipe(dest('dist/'));
+    done();
+}
 
-// function php(done) {
-//     src('**.php')
-//         .pipe(dest('dist/'));
-//     src('phpmailer/**/**')
-//         .pipe(dest('dist/phpmailer/'));
-//     done();
-// }
+function php(done) {
+    src('**.php')
+        .pipe(dest('dist/'));
+    src('phpmailer/**/**')
+        .pipe(dest('dist/phpmailer/'));
+    done();
+}
 
-// function fonts(done) {
-//     src('**.fonts')
-//         .pipe(dest('dist/fonts'));
-//     done();
-// }
+function fonts(done) {
+    src('**.fonts')
+        .pipe(dest('dist/fonts'));
+    done();
+}
 
-// function imagemin(done) {
-//     src('img/**/**')
-//         .pipe(tinypng({key: 'b4c9Yhd9qrG37n8hf3xRK6KYR8mjrcdG'}))
-//         .pipe(dest('dist/img/'))
-//     src('img/**/*.svg')
-//         .pipe(dest('dist/img/'))
-//     done();
-// };
+function imagemin(done) {
+    src('img/**/**')
+        .pipe(tinypng({key: 'b4c9Yhd9qrG37n8hf3xRK6KYR8mjrcdG'}))
+        .pipe(dest('dist/img/'))
+    src('img/**/*.svg')
+        .pipe(dest('dist/img/'))
+    done();
+};
 
 exports.serve = bs;
-// exports.build = series(buildCSS, buildJS, html, php, fonts, imagemin);
+exports.build = series(buildCSS, buildJS, html, php, fonts, imagemin);
